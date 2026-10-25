@@ -1,0 +1,57 @@
+{
+  "name": "chiranth-portfolio",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "typecheck": "nuxt typecheck"
+  },
+  "devDependencies": {
+    "@fontsource-variable/inter": "5.3.0",
+    "@fontsource-variable/jetbrains-mono": "5.3.0",
+    "@fontsource-variable/space-grotesk": "5.3.0",
+    "@iconify-json/lucide": "1.2.147",
+    "@iconify-json/simple-icons": "1.2.100",
+    "@iconify/tailwind4": "1.2.3",
+    "@nuxt/eslint": "1.17.0",
+    "@types/node": "22.20.5",
+    "eslint": "10.13.0",
+    "prettier": "3.9.10",
+    "typescript": "5.9.3",
+    "vue-tsc": "3.3.13"
+  },
+  "overrides": {
+    "@vercel/analytics": {
+      "vue-router": "$vue-router"
+    },
+    "@vercel/speed-insights": {
+      "vue-router": "$vue-router"
+    }
+  },
+  "dependencies": {
+    "@nuxt/content": "3.16.2",
+    "@nuxt/fonts": "1.2.0",
+    "@nuxt/image": "2.2.0",
+    "@nuxtjs/seo": "6.0.1",
+    "@tailwindcss/vite": "4.3.3",
+    "@vercel/analytics": "2.0.1",
+    "@vercel/speed-insights": "2.0.0",
+    "@vueuse/core": "15.0.0",
+    "@vueuse/nuxt": "15.0.0",
+    "better-sqlite3": "13.0.3",
+    "nuxt": "4.6.2",
+    "tailwindcss": "4.3.3",
+    "vue": "3.5.44",
+    "vue-router": "5.4.0"
+  }
+}

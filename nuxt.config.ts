@@ -131,7 +131,8 @@ export default defineNuxtConfig({
   },
 
   content: {
-    experimental: { sqliteConnector: 'better-sqlite3' },
+    // Node's built-in SQLite (Node >= 22.5): no native dependency to compile on install.
+    experimental: { sqliteConnector: 'native' },
     build: {
       markdown: {
         toc: { depth: 2 },

@@ -121,7 +121,7 @@ The schema in `content.config.ts` validates every field at build time. Markdown 
 
 1. Push this repository to GitHub.
 2. In Vercel, choose **Add New → Project** and import the repository.
-3. Vercel detects **Nuxt** automatically — keep the defaults and click **Deploy**.
+3. Vercel detects **Nuxt** automatically — keep the defaults and click **Deploy**. `npm run build` runs `nuxt generate`, and Nitro picks its `vercel-static` preset, so the site deploys as plain static files with long-term caching for hashed assets. Node.js 22.5 or newer is required (Vercel's default Node 22 works).
 4. Enable **Analytics** and **Speed Insights** in the Vercel project dashboard.
 
 The site URL used for canonical links, the sitemap, and Open Graph tags defaults to `https://chiranth-resume.vercel.app`. If the deployment uses a different domain, set the environment variable `NUXT_SITE_URL` (e.g. `https://chiranth.dev`) in Vercel and redeploy.
